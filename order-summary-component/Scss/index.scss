@@ -14,23 +14,32 @@ $base-font-paragraph: 16px;
   font-family: "Red Hat Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+button {
+  border: 0;
+  cursor: pointer;
+}
 
 body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: top;
+
   background-color: $primary-paleblue;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
   .container {
-    width: 450px;
-    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 1.25rem;
     background-color: #fff;
     border-radius: 1rem;
+    box-shadow: 0px 20px 10px 0px #d6e1ff;
     img {
+      max-width: 450px;
+      width: 100%;
       border-radius: 1rem 1rem 0 0;
     }
     h1 {
@@ -46,11 +55,70 @@ body {
     .content {
       text-align: center;
       margin-top: 1rem;
-      padding: 0 3rem;
+      padding: 0 2.75rem;
       line-height: 1.5rem;
     }
-    .box {
-      background-color: $neutral-paleblue;
+    .box-outer {
+      margin: 0 2.5rem;
+      .box-inner {
+        background-color: $neutral-paleblue;
+        margin: 1.25rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 1.5rem;
+        border-radius: 1rem;
+        .box-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .text-plan {
+            margin-left: 1rem;
+            h1 {
+              font-size: $base-font-paragraph;
+              margin-bottom: 3px;
+            }
+          }
+        }
+        .box-right {
+          color: $primary-brightblue;
+          a {
+            font-weight: 700;
+            &:hover {
+              text-decoration: none;
+              color: lighten($primary-brightblue, 20);
+            }
+          }
+        }
+      }
+      .button-proceed {
+        margin-top: 1rem;
+        width: 100%;
+        background-color: $primary-brightblue;
+        color: white;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        font-size: $base-font-paragraph;
+        text-align: center;
+        box-shadow: 0px 20px 15px 0px $primary-paleblue;
+        &:hover {
+          background-color: lighten($primary-brightblue, 20);
+        }
+      }
+      .button-cancel {
+        background-color: white;
+        color: $neutral-desaturatedblue;
+        font-size: $base-font-paragraph;
+        display: block;
+        margin: 2rem auto 3rem;
+        font-weight: 900;
+        &:hover {
+          color: $neutral-darkblue;
+        }
+      }
     }
   }
 }
+
+// @media screen and (max-width: 375px) {
+// }
