@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+$bg-page: hsl(233, 47%, 7%);
+$bg-card: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+
+$main-title: hsl(0, 0%, 100%);
+$main-para: hsla(0, 0%, 100%, 0.75);
+$main-stat: hsla(0, 0%, 100%, 0.6);
+
+$base-font-size: 15px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: $bg-page;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  background-color: $bg-card;
+  border-radius: 1.25rem;
+  .card-left {
+    max-width: 540px;
+    width: 100%;
+    padding: 4.5rem 6rem 4.5rem 4.5rem;
+    .card-left-content {
+      .title {
+        color: $main-title;
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 0.01em;
+        span {
+          color: $accent;
+        }
+      }
+      .des {
+        font-family: "Lexend Deca";
+        font-size: $base-font-size;
+        margin-top: 2rem;
+        color: $main-para;
+        letter-spacing: 0.02em;
+        line-height: 1.5rem;
+      }
+      .stat {
+        margin-top: 4rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        text-transform: uppercase;
+        h1 {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+        p {
+          margin-top: 0.25rem;
+          font-family: "Lexend Deca";
+          font-weight: 400;
+          font-size: 12px;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+  .card-right {
+    .image {
+      height: 100%;
+      border-radius: 0 1.25rem 1.25rem 0;
+    }
+  }
+}
+
+@media screen and (max-width:1100px) {
+    .card {
+        max-width: 540px;
+        width: 100%;
+        margin: 2rem 1.5rem;
+        flex-direction: column-reverse;
+        .card-left {
+            padding: 2rem;
+            .card-left-content {
+                text-align: center;
+                .stat {
+                    margin-top: 1rem;
+                    flex-direction: column;
+                    div {
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+        .card-right {
+            .image {
+                border-radius: 1.25rem 1.25rem 0 0;
+                width: 100%;
+            }
+        }
+    }
+
+}
