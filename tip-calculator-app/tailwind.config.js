@@ -13,6 +13,7 @@ module.exports = {
       grayish:"#7f9c9f",
       lightgrayish:"#c5e4e7",
       verylightgrayish:"#f4fafa",
+      white:"#fff"
     }
   },
   plugins: [],
