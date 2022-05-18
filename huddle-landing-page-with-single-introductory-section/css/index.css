@@ -70,6 +70,12 @@
   font-size: 1.25rem;
 }
 
+.content .content-right .button {
+  -webkit-box-shadow: 8px 8px 30px black;
+          box-shadow: 8px 8px 30px black;
+  cursor: pointer;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,6 +94,7 @@
   border: 1px solid white;
   padding: 1.25rem;
   margin: 0.5rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

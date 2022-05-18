@@ -23,7 +23,6 @@ $magenta: hsl(300, 69%, 71%);
   }
 }
 
-
 .content {
   display: flex;
   justify-content: space-between;
@@ -33,8 +32,8 @@ $magenta: hsl(300, 69%, 71%);
   .content-left {
     margin-right: 3.75rem;
     .image {
-        max-width: 710px;
-        // width: 100%;
+      max-width: 710px;
+      // width: 100%;
     }
   }
   .content-right {
@@ -60,23 +59,29 @@ $magenta: hsl(300, 69%, 71%);
     .des,
     .button {
       font-size: 1.25rem;
+      
+    }
+    .button {
+        box-shadow: 8px 8px 30px black;
+        cursor: pointer;
     }
   }
 }
 
 .social {
-    display: flex;
-    margin-top: 5rem;
-    justify-content: right;
-    img {
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color: transparent;
-        border: 1px solid white;
-        padding: 1.25rem;
-        margin: 0.5rem;
-    }
+  display: flex;
+  margin-top: 5rem;
+  justify-content: right;
+  img {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1.25rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -86,7 +91,7 @@ $magenta: hsl(300, 69%, 71%);
     align-items: center;
     margin-top: 3rem;
     .content-left {
-        margin-right: 0;
+      margin-right: 0;
     }
     .content-right {
       display: flex;
@@ -95,9 +100,9 @@ $magenta: hsl(300, 69%, 71%);
       align-items: center;
       max-width: 900px;
       width: 100%;
-        .title {
-            margin-top: 3rem;
-        }
+      .title {
+        margin-top: 3rem;
+      }
       .title,
       .des {
         text-align: center;
@@ -105,25 +110,25 @@ $magenta: hsl(300, 69%, 71%);
     }
   }
   .social {
-      justify-content: center;
-      margin-top: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
 
-@media screen and (max-width:720px) {
-    .content-left {
-        .image{
-            width: 100%;
-        }
+@media screen and (max-width: 720px) {
+  .content-left {
+    .image {
+      width: 100%;
     }
+  }
 }
 
-@media screen and (max-width:600px) {
-    .container {
-        background: url("../images/bg-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-color: $violet;
-        padding: 2rem;
-    }
+@media screen and (max-width: 600px) {
+  .container {
+    background: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $violet;
+    padding: 2rem;
+  }
 }
