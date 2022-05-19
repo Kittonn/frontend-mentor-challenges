@@ -40,6 +40,7 @@ header nav .nav-right {
   border: 1px solid #ff8fd8;
   padding: 0.5rem 2rem;
   border-radius: 4rem;
+  cursor: pointer;
 }
 
 .content {
@@ -94,6 +95,7 @@ header nav .nav-right {
 
 .stat h1 {
   font-size: 5rem;
+  color: #00252e;
 }
 
 .stat p {
@@ -101,6 +103,7 @@ header nav .nav-right {
   letter-spacing: 0.1em;
   font-weight: 600;
   text-align: center;
+  color: #00252e;
 }
 
 .bg-top-1 {
@@ -143,7 +146,21 @@ header nav .nav-right {
 }
 
 .content-grow .content-grow-box .content-grow-left img {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.content-grow .content-grow-box .content-grow-right {
+  max-width: 450px;
+}
+
+.content-grow .content-grow-box .content-grow-right h1,
+.content-grow .content-grow-box .content-grow-right p {
+  color: #00252e;
+}
+
+.content-grow .content-grow-box .content-grow-right p {
+  margin-top: 1.25rem;
 }
 
 .content-flow {
@@ -164,7 +181,21 @@ header nav .nav-right {
 }
 
 .content-flow .content-flow-left img {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.content-flow .content-flow-right {
+  max-width: 450px;
+}
+
+.content-flow .content-flow-right h1,
+.content-flow .content-flow-right p {
+  color: #00252e;
+}
+
+.content-flow .content-flow-right p {
+  margin-top: 1.25rem;
 }
 
 .bg-top-2 {
@@ -208,7 +239,21 @@ header nav .nav-right {
 }
 
 .content-users .content-users-box .content-users-left img {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.content-users .content-users-box .content-users-right {
+  max-width: 450px;
+}
+
+.content-users .content-users-box .content-users-right h1,
+.content-users .content-users-box .content-users-right p {
+  color: #00252e;
+}
+
+.content-users .content-users-box .content-users-right p {
+  margin-top: 1.25rem;
 }
 
 .bg-footer-top {
@@ -253,9 +298,6 @@ footer .footer-box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
@@ -266,6 +308,99 @@ footer .footer-box .footer-left {
   max-width: 350px;
 }
 
+footer .footer-box .footer-left .footer-des {
+  font-size: 14px;
+  margin: 1.75rem 0;
+}
+
+footer .footer-box .footer-left .email p,
+footer .footer-box .footer-left .phone p {
+  margin-left: 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 footer .footer-box .footer-right {
-  max-width: 450px;
+  max-width: 500px;
+}
+
+footer .footer-box .footer-right h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+footer .footer-box .footer-right p {
+  margin: 2rem 0;
+}
+
+footer .footer-box .footer-right input,
+footer .footer-box .footer-right button {
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+footer .footer-box .footer-right input {
+  max-width: 250px;
+  width: 100%;
+}
+
+footer .footer-box .footer-right button {
+  margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: #ff52bf;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 950px) {
+  .stat {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stat .stat-left {
+    margin-bottom: 6rem;
+  }
+  .content-grow .content-grow-box {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-grow .content-grow-box h1 {
+    margin-top: 5rem;
+  }
+  .content-flow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .content-flow h1 {
+    margin-top: 5rem;
+  }
+  .content-users .content-users-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .content-users .content-users-box h1 {
+    margin-top: 5rem;
+  }
+  .content-users .content-users-box p {
+    margin-bottom: 4rem;
+  }
+  footer .footer-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
