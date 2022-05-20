@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 400;
+  margin-left: 2.5rem;
+}
+
+.title {
+  font-family: "Raleway";
+  font-size: 2.5rem;
+}
+
+.des {
+  font-family: "Open Sans";
+  margin: 2rem 0;
+}
+
+#max-des {
+  max-width: 500px;
+}
+
+#max-des-2 {
+  max-width: 600px;
+}
+
+.content-text {
+  max-width: 650px;
+  width: 100%;
+}
+
+.img-content {
+  max-width: 550px;
+  width: 100%;
+}
+
+.content-files .content-files-left input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.content-files .content-files-left button {
+  background-color: #3065f8;
+  border-radius: 0.25rem;
+  color: white;
+  border: 0;
+  font-family: "Raleway";
+  font-weight: 700;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+}
+
+.content-stay {
+  background-color: #f6f6fe;
+}
+
+.content-stay .content-stay-left {
+  margin-right: 2rem;
+}
+
+.content-stay .content-stay-left button {
+  margin-bottom: 2rem;
+}
+
+.content-stay .content-stay-left .card {
+  background-color: white;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.content-stay .content-stay-left .card p {
+  font-family: "Open Sans";
+}
+
+.content-stay .content-stay-left .card .card-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.content-stay .content-stay-left .card .card-profile .card-profile-left {
+  margin-right: 1rem;
+}
+
+.content-stay .content-stay-left .card .card-profile .card-profile-left img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.content-stay .content-stay-left .card .card-profile .card-profile-right .title-profile {
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 1.75rem;
+}
+
+.content-stay .content-stay-left .card .card-profile .card-profile-right .job-profile {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.content-early {
+  background-color: #585989;
+}
+
+.content-early .content-early-left h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.content-early .content-early-left p {
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.content-early .content-early-right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer {
+  background-color: #070439;
+  color: white;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content #col-1 p {
+  display: inline;
+}
+
+footer .footer-content #col-4 i {
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid white;
+  padding: 0.75rem;
+  border-radius: 50%;
+}
