@@ -93,17 +93,17 @@ header {
 }
 
 .bg-top-1 {
-  background: url("../images//bg-section-top-desktop-1.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .bg-bottom-1 {
-  background: url("../images/bg-section-bottom-desktop-1.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .content-grow {
@@ -165,18 +165,17 @@ header {
 }
 
 .bg-top-2 {
-  margin-top: 10rem;
-  background: url("../images/bg-section-top-desktop-2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .bg-bottom-2 {
-  background: url("../images/bg-section-bottom-desktop-2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .content-users {
@@ -210,10 +209,10 @@ header {
   }
 }
 .bg-footer-top {
-  background: url("../images/bg-footer-top-desktop.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 200px;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 .content-ready {
   text-align: center;
@@ -259,6 +258,16 @@ footer {
           display: inline-block;
           margin-bottom: 1rem;
         }
+      }.media-icons {
+        margin-top: 3rem;
+        a {
+          margin-right: 1rem;
+          font-size: 3rem;
+          color: white;
+          &:hover {
+            color: skyblue;
+          }
+        }
       }
     }
     .footer-right {
@@ -287,6 +296,7 @@ footer {
         background-color: $pink;
         color: white;
         border-radius: 0.25rem;
+        font-weight: 600;
       }
     }
   }
@@ -331,5 +341,30 @@ footer {
     .footer-box {
       flex-direction: column-reverse;
     }
+  }
+}
+
+@media screen and (max-width:485px) {
+  header {
+    nav {
+      flex-direction: column;
+      .nav-right {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    button {
+      margin-top: 1.25rem;
+    }
+  }
+  .footer-right {
+    margin-bottom: 4rem;
   }
 }
