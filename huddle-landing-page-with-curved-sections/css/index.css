@@ -348,6 +348,14 @@ footer .footer-box .footer-right input {
   width: 100%;
 }
 
+footer .footer-box .footer-right p {
+  margin-top: 1rem;
+}
+
+footer .footer-box .footer-right .error-text {
+  color: red;
+}
+
 footer .footer-box .footer-right button {
   margin-left: 2rem;
   padding: 0.5rem 1rem;
