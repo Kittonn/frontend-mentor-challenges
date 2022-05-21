@@ -39,5 +39,9 @@
         <img src="./assets/huddle-landing-curved-section.jpeg"/>
         <a href="./huddle-landing-page-with-curved-sections">Huddle Landing Page with Curved Sections</a>
         </td>
+        <td>
+        <img src="./assets/single-price-card.jpeg"/>
+        <a href="./single-price-grid-component">Single Price Grid Component</a>
+        </td>
     </tr>
 </table>
