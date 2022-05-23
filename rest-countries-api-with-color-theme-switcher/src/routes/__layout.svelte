@@ -6,7 +6,7 @@
     <div class="header-box">
         <h1>Where in the world?</h1>
     <p>
-        Dark Mode
+        🌙 Dark Mode
     </p>
     </div>
 </header>

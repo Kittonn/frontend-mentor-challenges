@@ -27,9 +27,10 @@
 </script>
 
 <div class="custom">
-    <div>
+    <div class="input">
+        <div>🔍</div>
         <input type="text" bind:value={search} placeholder="Search for a country."/>
-        <p>{search}</p>
+        
     </div>
     
     <div>

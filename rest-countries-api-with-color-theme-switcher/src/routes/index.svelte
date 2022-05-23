@@ -15,7 +15,7 @@
 </script>
 
 {#if loading}
-	<p>loading</p>
+	<div class="loading-text">loading...</div>
 {:else}
 	<Country/>
 {/if}
