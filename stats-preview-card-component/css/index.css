@@ -86,17 +86,8 @@
 .card .card-right .image {
   height: 100%;
   border-radius: 0 1.25rem 1.25rem 0;
-}
-
-.card .card-right .overlap {
-  border-radius: 0 1.25rem 1.25rem 0;
-  width: 101%;
-  height: 100%;
-  background-color: #aa5cdb;
-  position: relative;
-  top: -101%;
-  left: 0;
-  opacity: 0.5;
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #aa5cdb);
+          filter: opacity(0.5) drop-shadow(0 0 0 #aa5cdb);
 }
 
 @media screen and (max-width: 1100px) {

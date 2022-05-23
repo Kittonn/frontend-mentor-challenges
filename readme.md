@@ -13,4 +13,5 @@
 ![Order Summary Component](./assets/order-summary.jpeg) | [Order Summary Component](./order-summary-component/)
 ![Single Price Grid Component](./assets/single-price-card.jpeg) | [Single Price Grid Component](./single-price-grid-component/)
 ![Testimonials Grid Section](./assets/Testimonials-grid.jpeg) | [Testimonials Grid Section](./testimonials-grid-section/)
+![Stats Preview Card Component](./assets/stat%20preview.jpeg) | [Stats Preview Card Component](./stats-preview-card-component/)
 ![Huddle Landing Page with Curved Sections](./assets/huddle-landing-curved-section.jpeg) | [Huddle Landing Page with Curved Sections](./huddle-landing-page-with-curved-sections/)
