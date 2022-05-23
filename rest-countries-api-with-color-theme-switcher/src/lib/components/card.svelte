@@ -8,24 +8,10 @@
 
 <div class="card">
 	<img src={flag} alt="" />
-	<h1>{name}</h1>
-	<p>{population}</p>
-	<p>{region}</p>
-	<p>{capital}</p>
+	<div class="text">
+		<h1>{name}</h1>
+		<p><b>Population :</b> {population.toLocaleString()}</p>
+		<p><b>Region :</b> {region}</p>
+		<p><b>Capital :</b> {capital}</p>
+	</div>
 </div>
-
-<style>
-    .card {
-        background-color: white;
-        
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    }
-    .card img {
-        /* max-width: 200px; */
-        display: block;
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        
-    }
-</style>

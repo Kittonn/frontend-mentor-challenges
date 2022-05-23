@@ -1,16 +1,19 @@
-<main class="container">
-    <slot/>
+<script>
+    import "../app.css"
+</script>
+
+<header>
+    <div class="header-box">
+        <h1>Where in the world?</h1>
+    <p>
+        Dark Mode
+    </p>
+    </div>
+</header>
+
+<main >
+    <div class="container">
+        <slot/>
+    </div>
 </main>
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .container {
-        min-height: 100vh;
-        background-color: hsl(0, 0%, 98%);
-        
-    }
-</style>
