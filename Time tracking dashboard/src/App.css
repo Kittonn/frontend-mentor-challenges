@@ -220,12 +220,33 @@ button {
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:500px) {
+    
     .grid-container {
         grid-template-columns: repeat(1,minmax(0,1fr));
         grid-template-rows: repeat(7,auto);
     }
     .item-1 {
         grid-column: 1/2;
+    }
+    .content-box {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-center {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .item-1-top h1 {
+        font-size: 1.5rem;
+    }
+    .name-content {
+        margin-left: 0.75rem;
     }
 }

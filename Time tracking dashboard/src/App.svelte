@@ -36,14 +36,18 @@
             <p>{item.title}</p>
             <img src="./images/icon-ellipsis.svg" class="ellipsis" alt="" />
           </div>
-          <p class="content-center">{item.timeframes[btn_select].current}hrs</p>
-          <p class="content-footer">
-            {btn_select === "weekly"
-              ? word[1]
-              : btn_select === "daily"
-              ? word[0]
-              : word[2]} - {item.timeframes[btn_select].previous}hrs
-          </p>
+          <div class="content-box">
+            <p class="content-center">
+              {item.timeframes[btn_select].current}hrs
+            </p>
+            <p class="content-footer">
+              {btn_select === "weekly"
+                ? word[1]
+                : btn_select === "daily"
+                ? word[0]
+                : word[2]} - {item.timeframes[btn_select].previous}hrs
+            </p>
+          </div>
         </div>
       </div>
     {/each}
