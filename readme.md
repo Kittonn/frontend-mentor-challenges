@@ -15,4 +15,5 @@
 ![Testimonials Grid Section](./assets/Testimonials-grid.jpeg) | [Testimonials Grid Section](./testimonials-grid-section/)
 ![Stats Preview Card Component](./assets/stat%20preview.jpeg) | [Stats Preview Card Component](./stats-preview-card-component/)
 ![Time Tracking Dashboard](./assets/time-tracking.jpeg) | [Time Tracking Dashboard](./time-tracking-dashboard/)
+![NFT Preview Card Component](./assets/nft-preview-card.jpeg) | [NFT Preview Card Component](./nft-preview-card-component/)
 ![Huddle Landing Page with Curved Sections](./assets/huddle-landing-curved-section.jpeg) | [Huddle Landing Page with Curved Sections](./huddle-landing-page-with-curved-sections/)
