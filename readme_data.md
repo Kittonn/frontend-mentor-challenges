@@ -5,10 +5,10 @@
 
 **Preview** | **Name** | **Tech Stack** | **Demo**
 :---: | :---: | :---: | :---:
-![Advice Generator App](./assets/advice-generator.jpeg) | [Advice Generator App](./advice-generator-app/) | React.Ts Redux Typescript CSS | [Demo](https://frontend-mentor-challenges-hjok575pd-lnwtxn.vercel.app/)
+![Advice Generator App](./assets/advice-generator.jpeg) | [Advice Generator App](./advice-generator-app/) | React.Ts Redux Typescript CSS | [Demo](https://advice-generator-kittonn.vercel.app/)
 ![3 Column Preview Card Component](./assets/three-col.jpeg) | [3 Column Preview Card Component](./3-column-preview-card-component/) | HTML SCSS | [Demo](https://three-col-preview-card-kittonn-dd2p6us0s-lnwtxn.vercel.app/)
 ![Qr-code Component](./assets/qrcode.jpeg) | [Qr-code Component](./qr-code-component/) | HTML SCSS | [Demo](https://qrcode-kittonn.netlify.app)
-![Profile Card Component](./assets/profile-card.jpeg) | [Profile Card Component](./profile-card-component/) | HTML SCSS | [Demo](https://profile-card-kittonn-mrgdyc66y-lnwtxn.vercel.app/)
+![Profile Card Component](./assets/profile-card.jpeg) | [Profile Card Component](./profile-card-component/) | HTML SCSS | [Demo](https://profile-card-kittonn.netlify.app/)
 ![Huddle Landing Page with Single Introductory Section](./assets/huddle-landing.jpeg) | [Huddle Landing Page with Single Introductory Section](./huddle-landing-page-with-single-introductory-section/) | HTML SCSS | [Demo](https://huddle-landing-kittonn.netlify.app/)
 ![Order Summary Component](./assets/order-summary.jpeg) | [Order Summary Component](./order-summary-component/) | HTML SCSS | [Demo](https://order-summary-kittonn.netlify.app)
 ![Single Price Grid Component](./assets/single-price-card.jpeg) | [Single Price Grid Component](./single-price-grid-component/) | HTML SCSS | [Demo](https://single-price-grid-kittonn.netlify.app)
