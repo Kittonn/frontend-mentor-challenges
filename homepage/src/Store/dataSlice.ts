@@ -13,6 +13,8 @@ interface projectI {
     name:string
     path:string
     stack:string[]
+    demo:string
+    code:string
 }
 
 interface dataI {

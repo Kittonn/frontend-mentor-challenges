@@ -8,14 +8,15 @@ const SingleProject = () => {
   let data = useSelector(selectData).filter((item) => item.id === Number(id));
 
   return (
-    <div>
-      <Link to="/">back</Link>
-      <div>
-        {data.map((item) => {
-          return <div>{item.name}</div>;
-        })}
+    <div className="single-project">
+      <h1 className="name">{data[0]?.name}</h1>
+      <div className="btn">
+        <a id='demo' target="_blank" rel="noreferrer" href={data[0]?.demo}>Demo</a>
+        <a id="code" target="_blank" rel="noreferrer" href={`https://github.com/Kittonn/Frontend-Mentor-Challenges/tree/master/${data[0]?.code}`}>Code</a>
       </div>
-      <iframe src="https://recipe-page-kittonn.netlify.app/" ></iframe>
+      <div className="preview">
+        <iframe src={data[0]?.demo} frameBorder="0"></iframe>
+      </div>
     </div>
   );
 };

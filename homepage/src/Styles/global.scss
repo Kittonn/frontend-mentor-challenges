@@ -13,15 +13,20 @@
   background-color: $lighten-gray;
   min-height: 100vh;
   padding: 0 30px;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .title {
+  margin: 0 auto;
+  width: fit-content;
   padding-top: 3.5rem;
   text-align: center;
   h1 {
     font-size: 70px;
     font-style: italic;
     line-height: 0;
+    color: black;
   }
   h2 {
     font-family: "Allura";
@@ -32,8 +37,10 @@
 }
 
 .content {
+  // flex: 1;
   max-width: 1200px;
   margin: 2rem auto;
+  // background-color: aqua;
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -92,10 +99,50 @@
   }
 }
 
-iframe {
-  width: 700px;
-  min-height: 800px;
+.single-project {
   background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  .name {
+    text-align: center;
+    font-size: 22px;
+
+  }
+  .preview {
+    // background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    iframe {
+      border-radius: 12px;
+      margin: 0 auto;
+      max-width: 700px;
+      height: 800px;
+      background-color: white;
+      width: 100%;
+    }
+  }
+  .btn {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin:0.75rem 0 1rem;
+    a {
+      display: inline-flex;
+      border-radius: 6px;
+      padding: 0.75rem 2rem;
+      color: white;
+      text-decoration: none;
+      margin:  0.5rem;
+    }
+    #demo {
+      background-color: $yellow;
+    }
+    #code {
+      background-color: $pink;
+    }
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -114,6 +161,27 @@ iframe {
   .content {
     .card-container {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .content {
+    .card-container {
+      .card {
+        min-width: 250px;
+      }
     }
   }
 }
