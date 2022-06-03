@@ -25,7 +25,7 @@ const CardContainer = () => {
                   );
                 })}
               </div>
-              <h1><a href={`/project/${item.id}`}>{item.name}</a></h1>
+              <h1><Link to={`/${item.id}`}>{item.name}</Link></h1>
             </div>
           </div>
         );
