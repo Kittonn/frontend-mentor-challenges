@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@tailwind base;
+h1 {
+    @apply text-[#f2f2f2] text-4xl my-8 font-bold uppercase;
+    font-family: 'Big Shoulders Display';
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    @apply text-sm leading-6;
+}
+button {
+    font-family: 'Lexend Deca';
+    @apply bg-[#f2f2f2] py-3 text-center px-8 rounded-[2rem] mt-[4.5rem];
+}
+@tailwind components;
+@tailwind utilities;
