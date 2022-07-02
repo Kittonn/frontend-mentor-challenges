@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-['Karla'];
+}
+
+.bg {
+  background-color: mix( #ffffff,  #2ab2af,  30);
+}
+
+h5 {
+  @apply text-lg font-bold mb-2;
+}
