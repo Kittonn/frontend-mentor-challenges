@@ -45,7 +45,10 @@
           <span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter
         </h5>
       </div>
-      <div class="bg-white p-6 md:p-10 rounded-xl">
+      <form
+        class="bg-white p-6 md:p-10 rounded-xl"
+        on:submit|preventDefault={submit}
+      >
         <div>
           <div class="relative">
             <input
@@ -159,7 +162,7 @@
           </p>
         </div>
         <button
-          on:click={submit}
+          type="submit"
           class="text-center bg-[#38cc8c] uppercase font-semibold text-white p-4 rounded-md w-full"
           >claim your free trial</button
         >
@@ -168,7 +171,7 @@
             class="text-[#ff7a7a] font-bold">Terms and Services</span
           >
         </p>
-      </div>
+      </form>
     </div>
   </div>
 </main>
