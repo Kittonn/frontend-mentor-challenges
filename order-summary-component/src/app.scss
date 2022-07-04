@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Red Hat Display";
+}
+
+.hover-button:hover {
+  background: rgba(56, 41, 224,0.9);
+}
+
+.hover-text:hover {
+  color: rgba(56, 41, 224,0.8);
+  @apply no-underline;
+}
+
+main {
+  background: url(./assets/images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+}
