@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  @apply font-normal ;
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1,
+h5,
+h6 {
+  @apply font-["Inter"] ;
+}
+
+h1,
+h5 {
+  @apply font-bold text-white;
+}
+
+h6 {
+  @apply font-normal uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+span {
+  @apply text-[#aa5cdb];
+}
+
+img {
+
+  mix-blend-mode: multiply;
+  
+}

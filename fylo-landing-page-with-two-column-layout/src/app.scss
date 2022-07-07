@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+h1,
+h5,
+h6 {
+  @apply font-["Raleway"] font-bold;
+}
+
+h1 {
+  @apply text-2xl md:text-4xl text-[#070439];
+}
+h2 {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+p {
+  font-family: "Open Sans";
+  @apply font-normal text-base;
+}
+
+.hero {
+  @apply bg-[url(./assets/images/bg-curve-mobile.svg)] lg:bg-[url(./assets/images/bg-curve-desktop.svg)];
+  // background-image: url(./assets/images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15vh;
+  background-position: center center;
+}
