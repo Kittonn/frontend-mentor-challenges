@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  @apply font-semibold font-['Poppins'];
+}
+
+h1 {
+  @apply font-["Poppins"] text-4xl;
+}
+
+p {
+  font-family: "Open Sans";
+  @apply font-normal text-lg;
+}
+
+.card {
+  @apply bg-white shadow-xl rounded-xl my-12 flex justify-between items-center pl-[8rem] py-12 pr-12;
+}
+
+h2 {
+  @apply font-["Poppins"] text-2xl font-semibold;
+}
+
+.card-para {
+  @apply text-base max-w-[510px];
+}
+
+.card-img {
+  @apply max-w-[550px];
+}
+
+.bg-form {
+  background: linear-gradient(180deg,#fff 60%, #00252e 30%);
+}

@@ -1,5 +1,11 @@
 <script lang="ts">
   import Image from "../../assets/images/illustration-1.svg";
+  import { validEmail } from "../../validEmail";
+  let errorForm: boolean = true;
+  let email;
+  const submit = () => {
+    errorForm = validEmail(email);
+  };
 </script>
 
 <div class="flex lg:flex-row flex-col-reverse items-center justify-between">
@@ -12,12 +18,22 @@
       wherever you need, share and collaborate with friends, family, and
       co-workers.
     </p>
-    <form class="max-w-[400px] lg:max-w-[600px] mx-auto lg:mx-0" action="">
-      <input
-        class="border-[1px] border-black my-2 py-2 px-4 lg:max-w-[300px] rounded mr-4 w-full"
-        type="text"
-        placeholder="Enter your email..."
-      />
+    <form
+      on:submit|preventDefault={submit}
+      class="max-w-[400px] lg:max-w-[600px] mx-auto lg:mx-0 lg:flex lg:items-start"
+      action=""
+    >
+      <div class="lg:mr-4 ">
+        <input
+          class={`border-[1px] ${errorForm ? "border-black" : "border-red-500"} my-2 py-2 px-4 lg:max-w-[300px] rounded w-full`}
+          type="text"
+          placeholder="Enter your email..."
+          bind:value={email}
+        />
+        <p class={`text-sm text-red-600 ${errorForm ? "hidden" : "block"}`}>
+          Please check your email.
+        </p>
+      </div>
       <button
         type="submit"
         class="font-bold text-white my-2  w-full lg:w-fit bg-[#3065f8] rounded text-sm py-3 px-8"
